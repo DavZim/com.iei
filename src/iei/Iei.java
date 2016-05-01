@@ -22,8 +22,9 @@ public class Iei {
 		LocalDate lastIndepEvent = LocalDate.parse("2000-01-01", formatter);//("01/01/2000", formatter);
 		LocalDate date;
 
+		//System.out.println(System.getProperty("user.dir"));
 		// 1. read data by line
-		String csvFile = "C:/Users/david/OneDrive/Documents/bid_contest_codecats_java/dataset_big.csv";
+		String csvFile = "dataset_big.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -93,7 +94,7 @@ public class Iei {
 		System.out.println("Total of " + indepCounter + " independent events found!");
 
 		// 3. Write Out File
-		String csvFileOut = "C:/Users/david/OneDrive/Documents/bid_contest_codecats_java/dataset_big_java.csv";
+		String csvFileOut = "dataset_big_java.csv";
 		String lineOut = "target,date,independent\n";
 		File fileOut = new File(csvFileOut);
 		// if the file doesnt exist create new file
